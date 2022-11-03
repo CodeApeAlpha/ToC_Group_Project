@@ -5,6 +5,10 @@ In this project a deterministic finite automaton (DFA) was designed and implemen
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install the dependencies in the local node_modules folder.
+
 ### `npm start`
 
 Runs the app in the development mode.\
