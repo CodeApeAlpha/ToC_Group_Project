@@ -1,14 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.app-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.app-header {
+#mainDiv {
   min-height: 100vh;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,5 +8,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
 
 

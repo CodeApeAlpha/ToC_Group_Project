@@ -1,0 +1,62 @@
+#simulationContainer {
+    width: 612px;
+    height: 408px;
+}
+
+#background {
+    position: relative;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#foreground {
+    position: absolute;
+    bottom: 0;
+    background-position: bottom;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-repeat: repeat-x;
+    height: 100%;
+    width: 1000%;
+    z-index: 2;
+}
+
+#car {
+    position: absolute;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    bottom: 5%;
+    height: 26%;
+    width: 34%;
+    margin-left: 15%;
+    z-index: 3;
+    animation: bodyRoll 1s linear infinite;
+}
+
+
+
+
+
+@keyframes move {
+    100% {
+        transform: translateX(-1414px);
+    }
+}
+
+@keyframes bodyRoll {
+    100% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}

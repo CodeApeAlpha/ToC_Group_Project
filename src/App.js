@@ -1,12 +1,26 @@
-import logo from './icons8-fiat-500.gif';
-import './App.css';
+import React, {Component, useState, useEffect} from "react";
+import AppStyles from "./App.module.css";
+
+import CarSimulation from './user-interface/simulation-car/CarSimulation.jsx';
+
+
 
 function App() {
+
+  // function adjustSpeed() {
+  //   setSpeed(prevSpeed => prevSpeed + 5);
+  //   console.log(speed);
+  // }
+
+  // useEffect (() => {
+  //   console.log("App.js");
+  // }, []);
+
+
   return (
-    <div className="app-container">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-      </header>
+    <div id = {AppStyles.mainDiv} className="app-container">
+      {/* <CarSimulation carOnProp = {carOn} speedProp = {speed} drivePositionProp = {drivePosition}/> */}
+      <CarSimulation />
     </div>
   );
 }
