@@ -17,21 +17,26 @@ If the vehicle is in the cruise-control-engaged position and it receives the acc
 
 If the vehicle is in the in-forward-motion or the in-reverse-motion positions and the speed is at 0, then the vehicle returns to the stationary position.
 
-## Available Scripts
 
-In the project directory, you can run:
+## How to Run the Project
 
-### `npm install`
+In the terminal, run the following scripts:
+
+### 1. `npm install`
 
 Install the dependencies in the local node_modules folder.
 
-### `npm start`
+### 2. `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+## Available Scripts
+
+In the project directory, you can run:
 
 ### `npm test`
 
