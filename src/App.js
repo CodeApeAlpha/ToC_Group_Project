@@ -18,9 +18,10 @@ function App() {
 
 
   return (
-    <div id = {AppStyles.mainDiv} className="app-container">
-      {/* <CarSimulation carOnProp = {carOn} speedProp = {speed} drivePositionProp = {drivePosition}/> */}
-      <CarSimulation />
+    <div id = {AppStyles.mainDiv}  className="app-container">
+      {/* <CarSimulation carOnProp = {carOn} speedProp = {speed} drivePositionProp = {drivePosition}/>  */}
+        <CarSimulation />
+      
     </div>
   );
 }
