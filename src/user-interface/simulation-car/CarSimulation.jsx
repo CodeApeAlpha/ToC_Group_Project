@@ -11,7 +11,6 @@ import carImg from "./images/car.png";
 
 //----------------------------------------------------------VARS---------------------------
 let vh = window.innerHeight;
-let scale = (vh/408);
 
 
 const backgroundStyle = {
@@ -122,14 +121,6 @@ export default function CarSimulation () {
 
     
     return (
-        // <div id = {CarSimulationStyles.simulationContainer} style = {{transform: `scale(${scale})`}} onClick ={e => updateData("1",50,"f")}>
-
-        //     <div id = {CarSimulationStyles.background} ref = {backgroundElement} style = {backgroundStyle}>
-        //         <div id = {CarSimulationStyles.foreground} ref = {foregroundElement} style = {foregroundStyle}></div>
-        //         <div id = {CarSimulationStyles.car} ref = {carElement} style = {carStyle}></div> 
-        //     </div>
-
-        // </div>
 
         <div id = {CarSimulationStyles.simulationContainer}  onClick ={e => updateData("1",50,"f")}>
 
