@@ -1,0 +1,21 @@
+.digital-speedometer svg {
+    display: inline-block;
+    margin: 10px;
+}
+
+.digital-speedometer svg .segment {
+    fill: rgba(0, 0, 0, .15);
+    transition: .3s ease-in-out;
+}
+
+.digital-speedometer svg.num-0 .a,
+.digital-speedometer svg.num-0 .b,
+.digital-speedometer svg.num-0 .c,
+.digital-speedometer svg.num-0 .d,
+.digital-speedometer svg.num-0 .e,
+.digital-speedometer svg.num-0 .f {
+    fill: rgb(255, 0, 0);
+    /* opacity: 80%; */
+    /* fill: #0984e3; */
+}
+

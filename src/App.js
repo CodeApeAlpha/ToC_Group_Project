@@ -1,26 +1,9 @@
-import React, {Component, useState, useEffect} from "react";
-import AppStyles from "./App.module.css";
-
-import CarSimulation from './user-interface/simulation-car/CarSimulation.jsx';
-
-
+import Dashboard from './user-interface/dashboard/Dashboard';
 
 function App() {
-
-  // function adjustSpeed() {
-  //   setSpeed(prevSpeed => prevSpeed + 5);
-  //   console.log(speed);
-  // }
-
-  // useEffect (() => {
-  //   console.log("App.js");
-  // }, []);
-
-
   return (
-    <div id = {AppStyles.mainDiv} className="app-container">
-      {/* <CarSimulation carOnProp = {carOn} speedProp = {speed} drivePositionProp = {drivePosition}/> */}
-      <CarSimulation />
+    <div className="app-container">
+      <Dashboard/>
     </div>
   );
 }
