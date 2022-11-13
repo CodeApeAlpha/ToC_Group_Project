@@ -150,7 +150,7 @@ export default function CarSimulation () {
             // </div>
 
             // </div>
-            <div id = {CarSimulationStyles.simulationContainer}  onClick ={(e) => { test() }}>
+            <div id = {CarSimulationStyles.simulationContainer}  onClick ={(e) => {updateData("1",50,"f") }}>
                 <div id = {CarSimulationStyles.background} ref = {backgroundElement} style = {backgroundStyle}>
                     <div id = {CarSimulationStyles.foreground} ref = {foregroundElement} style = {foregroundStyle}></div>
                     <div id = {CarSimulationStyles.car} ref = {carElement} style = {carStyle}></div> 
