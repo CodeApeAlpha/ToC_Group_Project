@@ -1,6 +1,6 @@
 #simulationContainer {
-    width: 612px;
-    height: 408px;
+    min-width: 1010px;
+    height: 100vh;
 }
 
 #background {
@@ -31,9 +31,9 @@
     background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
-    bottom: 5%;
-    height: 26%;
-    width: 34%;
+    bottom: 5%; /*car height rom road*/
+    height: 21%; /*car lenght*/
+    width: 29%; /*car height*/
     margin-left: 15%;
     z-index: 3;
     animation: bodyRoll 1s linear infinite;

@@ -46,28 +46,8 @@ export default function CarSimulation () {
 
         console.log("UseEffect speed: ",speed);
         updateAnimations();
-
-        // x().then((result) => {
-        //     setSpeed(result);
-        // });
+        
     }, [carOn, speed, drivePosition]);
-
-    
-
-    // async function x (){
-    //     let y = 0;
-    //     let promise = new Promise((resolve, reject) => {
-    //         setInterval(() => {
-    //             resolve(y += 10);
-    //         }, 5000);
-    //     });  
-    // }
-
-
-
-
-
-
 
 
 
@@ -142,7 +122,16 @@ export default function CarSimulation () {
 
     
     return (
-        <div id = {CarSimulationStyles.simulationContainer} style = {{transform: `scale(${scale})`}} onClick ={e => updateData("1",50,"f")}>
+        // <div id = {CarSimulationStyles.simulationContainer} style = {{transform: `scale(${scale})`}} onClick ={e => updateData("1",50,"f")}>
+
+        //     <div id = {CarSimulationStyles.background} ref = {backgroundElement} style = {backgroundStyle}>
+        //         <div id = {CarSimulationStyles.foreground} ref = {foregroundElement} style = {foregroundStyle}></div>
+        //         <div id = {CarSimulationStyles.car} ref = {carElement} style = {carStyle}></div> 
+        //     </div>
+
+        // </div>
+
+        <div id = {CarSimulationStyles.simulationContainer}  onClick ={e => updateData("1",50,"f")}>
 
             <div id = {CarSimulationStyles.background} ref = {backgroundElement} style = {backgroundStyle}>
                 <div id = {CarSimulationStyles.foreground} ref = {foregroundElement} style = {foregroundStyle}></div>

@@ -17,7 +17,7 @@ html, body {
   background-color: rgb(255, 255, 255);
   /* max-width: 66vh; */
   /* margin: 1px auto; */
-  /* border-right: 1px solid rgb(187, 211, 231); */
+  border-right: 1px solid rgb(167, 167, 167); 
 }
 
 .dashboard-speedometer{
