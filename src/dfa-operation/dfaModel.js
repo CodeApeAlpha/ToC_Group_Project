@@ -1,9 +1,10 @@
 // https://www.youtube.com/watch?v=iBUJVy8phqw&t=639s
 import { createSlice } from '@reduxjs/toolkit'
-import {  dfaFunction } from "../components/state-header"
+import {  dfaFunction } from "../dfa-model/dfa"
 const initialState = {
     positionInit: "Q0",
     speedInit: 0,
+    inputInit: '',
     postionStack:[]
 }
 export const dfaModelSlice = createSlice({
@@ -15,6 +16,7 @@ export const dfaModelSlice = createSlice({
       console.log(data)
       state.positionInit = data.position
       state.speedInit = data.speed
+      state.inputInit = action.payload
       state.postionStack.push({
         "position":state.positionInit,
         "input":action.payload

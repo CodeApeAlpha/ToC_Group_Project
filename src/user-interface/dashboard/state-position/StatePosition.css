@@ -1,0 +1,14 @@
+.character-accepted{
+    color: black;
+    font-size: medium;
+    position: relative;
+    margin-top: 0px;
+    
+}
+
+.state-position {
+    color: black;
+    font-size: medium;
+    position: relative;
+    margin-bottom: 0px;
+}

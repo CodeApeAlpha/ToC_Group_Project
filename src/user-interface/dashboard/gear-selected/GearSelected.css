@@ -6,7 +6,31 @@
     height: 30px;
     width: 30px;
     margin: 50px;
+    /* color: rgb(38, 234, 20); */
+    color: red;
+    font-size: 18px;
+    background-color: #262626FF;
+    font-family: sans-serif;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 12px rgb(255, 0, 0),
+        1px 1px 14px rgb(255, 0, 0);
+    animation: anime 1s linear infinite;
+}
+
+.gear-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 30px;
+    width: 30px;
+    margin: 50px;
     color: rgb(38, 234, 20);
+    /* color: red; */
     font-size: 18px;
     background-color: #262626FF;
     font-family: sans-serif;

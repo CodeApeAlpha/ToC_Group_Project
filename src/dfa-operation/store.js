@@ -1,5 +1,7 @@
+// https://www.youtube.com/watch?v=iBUJVy8phqw&t=639s
+
 import { configureStore } from '@reduxjs/toolkit'
-import  counterReducer from './counter'
+// import  counterReducer from './counter'
 import dfaModelReducer from './dfaModel'
 
 export const store = configureStore({

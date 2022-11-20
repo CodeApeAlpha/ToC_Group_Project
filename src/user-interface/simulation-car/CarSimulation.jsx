@@ -7,8 +7,8 @@ import foregroundImg from "./images/foreground.png";
 import carImg from "./images/car.png";
 
 import { connect, useDispatch, useSelector } from 'react-redux';
-import {increment, incrementByAmount} from "../../redux/counter"
-import {start,decrease} from "../../redux/dfaModel"
+// import {increment, incrementByAmount} from "../../redux/counter"
+import {start,decrease} from "../../dfa-operation/dfaModel"
 
 
 //----------------------------------------------------------VARS---------------------------

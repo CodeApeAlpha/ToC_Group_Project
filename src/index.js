@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // Put any other imports below so that CSS from your
 // Redux Edit
 import {Provider} from "react-redux"
-import {store} from './redux/store';
+import {store} from './dfa-operation/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
