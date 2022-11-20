@@ -4,12 +4,12 @@ import { useSelector } from 'react-redux';
 
 const GearSelected = () => {
 
-  const {positionInit} = useSelector((state)=>state.dfaModel);
+  const {positionInit, inputInit} = useSelector((state)=>state.dfaModel);
 
   let gearSelected;
 
   function gearSelection() {
-    if (positionInit === 'Q0')
+    if (positionInit === 'Q0' || inputInit === 'i')
       gearSelected = 'P';
     else if (positionInit === 'Q1')
       gearSelected = 'P';
