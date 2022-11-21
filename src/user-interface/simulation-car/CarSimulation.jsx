@@ -47,6 +47,8 @@ export default function CarSimulation () {
 
     function updateAnimations() {
         //----Car bodyroll Animation Controller
+        console.log("Testing the position: " + positionInit)
+
         if (positionInit === "Q0"||positionInit === "Q1" || positionInit === "Q2" ) {
             carElement.current.style.animationPlayState = "paused";
             return 
@@ -60,6 +62,7 @@ export default function CarSimulation () {
             foregroundElement.current.style.animationName = CarSimulationStyles.move;
             foregroundElement.current.style.animationIterationCount = "infinite";
             foregroundElement.current.style.animationTimingFunction = "linear";
+            foregroundElement.current.style.animationDirection = "normal";
             foregroundElement.current.style.animationDuration = getSpeed();
             foregroundElement.current.style.animationPlayState = isCarMoving();
         }

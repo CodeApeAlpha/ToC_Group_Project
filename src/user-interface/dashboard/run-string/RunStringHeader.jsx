@@ -14,15 +14,10 @@ const RunStringHeader = (props) => {
 
 
    function handleChange(event) {
-        console.log(event.target.value);
+        console.log("Testing the value: "+event.target.value.length);
         let value = event.target.value.trim();
         let test = regex.test(value);
-        console.log(value!==" ");
-        // console.log("testing: "+value)
-        // if(value.length < 0){
-        //     alert("Empty input not accpeted")
-        //     return
-        // }
+        // console.log(value!==" ");
         if(test && value!==" "){
             setState(value[0].trim());
             return;
@@ -33,7 +28,7 @@ const RunStringHeader = (props) => {
 
     const runStringButton = event => {
         event.preventDefault();
-        if(state === " "){
+        if(state === " " || state === ""){
             alert("Empty input not accpeted");
             return;
         }
