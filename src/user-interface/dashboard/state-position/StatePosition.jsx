@@ -7,6 +7,7 @@ const StatePosition = () => {
   const {positionInit, inputInit} = useSelector((state)=>state.dfaModel);
 
   let positionState;
+  let signalProcessed;
 
   function statePosition() {
     if (positionInit === 'Q0')
@@ -30,6 +31,28 @@ const StatePosition = () => {
     return positionState;
   }
 
+  function processedSignal() {
+    if (inputInit === 'a')
+      signalProcessed = 'engine-started/engine-off';
+    else if (inputInit === 'b')
+      signalProcessed = 'brake-held';
+    else if (inputInit === 'c')
+      signalProcessed = 'seat-belt-engaged';
+    else if (inputInit === 'd')
+      signalProcessed = 'drive-selected';
+    else if (inputInit === 'e')
+      signalProcessed = 'reverse-selected';
+    else if (inputInit === 'f')
+      signalProcessed = 'accelerate';
+    else if (inputInit === 'g')
+      signalProcessed = 'break-pressed';
+    else if (inputInit === 'h')
+      signalProcessed = 'set-cruise-control';
+    else if (inputInit === 'i')
+      signalProcessed = 'park-selected';
+    return signalProcessed;
+  }
+
   return (
     <div >
       <p className='state-position'>
@@ -37,6 +60,9 @@ const StatePosition = () => {
       </p>
       <p className='character-accepted'>
         symbol processed: {inputInit}
+      </p>
+      <p className='signal'>
+        signal: {processedSignal()}
       </p>
     </div>
   )
