@@ -1,6 +1,6 @@
 // https://www.youtube.com/watch?v=iBUJVy8phqw&t=639s
 import { createSlice } from '@reduxjs/toolkit'
-import {  dfaFunction } from "../dfa-model/dfa"
+import { dfaFunction } from "../dfa-model/dfa"
 const initialState = {
     positionInit: "Q0",
     speedInit: 0,
@@ -21,7 +21,6 @@ export const dfaModelSlice = createSlice({
         "position":state.positionInit,
         "input":action.payload
       })
-    
     },
     decrease:(state)=>{
       if(state.speedInit>0 ){
