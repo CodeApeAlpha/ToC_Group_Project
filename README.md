@@ -20,7 +20,15 @@ If the vehicle is in the in-forward-motion or the in-reverse-motion positions an
 
 ## How to Run the Project
 
+<<<<<<< HEAD
 In the terminal, run the following scripts:
+=======
+1. Relocate to CarSimulation.module.css in the simulation-car folder of the user-interface folder that is in the src folder.
+2. Adjust the screen ratio (min-width) px to the size of your display inside of simulationContainer{}.
+3. Adjust the percentage of bottom (the car height from the road), height (the length of the car), and width (the height of the car) to fit the size of your display inside of car{} 
+
+4. In the terminal, run the following scripts:
+>>>>>>> 3035d157d9242c253c99fa4737154f1af648c29d
 
 ### 1. `npm install`
 

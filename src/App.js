@@ -1,12 +1,17 @@
-import logo from './icons8-fiat-500.gif';
-import './App.css';
+import React, {Component, useState, useEffect} from "react";
+import AppStyles from "./App.module.css";
+
+import CarSimulation from './user-interface/simulation-car/CarSimulation.jsx';
+import Dashboard from './user-interface/dashboard/Dashboard.jsx';
+
+
 
 function App() {
+
   return (
-    <div className="app-container">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-      </header>
+    <div id = {AppStyles.mainDiv}  className="app-container">
+        <Dashboard />
+        <CarSimulation />  
     </div>
   );
 }

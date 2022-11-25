@@ -1,0 +1,21 @@
+.state-position {
+    color: black;
+    font-size: medium;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.character-accepted{
+    color: black;
+    font-size: medium;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.signal{
+    color: black;
+    font-size: medium;
+    position: relative;
+    margin-top: 0px;
+}

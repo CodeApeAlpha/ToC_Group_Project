@@ -1,0 +1,28 @@
+.dashboard {
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(167, 167, 167);
+    /* position: relative; */
+    /* max-width: 66vh; */
+    /* margin: 1px auto; */
+}
+
+.dashboard-state-position{
+    position: absolute;
+    margin-top: 100px;
+    left: 24px;
+}
+
+.dashboard-speedometer {
+    position: absolute;
+    margin-top: 180px;
+}
+
+.dashboard-gear-selected {
+    position: absolute;
+    margin-top: 360px;
+}
