@@ -4,28 +4,28 @@ import { useSelector } from 'react-redux'
 
 const StatePosition = () => {
 
-  const {positionInit, inputInit} = useSelector((state)=>state.dfaModel);
+  const { positionInit, inputInit } = useSelector((state) => state.dfaModel);
 
   let positionState;
   let signalProcessed;
 
   function statePosition() {
     if (positionInit === 'Q0')
-      positionState = 'off position';
+      positionState = 'off ';
     else if (positionInit === 'Q1')
-      positionState = 'hold position';
+      positionState = 'hold ';
     else if (positionInit === 'Q2')
-      positionState = 'ignition-on position';
+      positionState = 'ignition-on ';
     else if (positionInit === 'Q3')
-      positionState = 'engine-started position';
+      positionState = 'engine-started ';
     else if (positionInit === 'Q4')
-      positionState = 'stationary position';
+      positionState = 'stationary ';
     else if (positionInit === 'Q5')
-      positionState = 'in-forward-motion position';
+      positionState = 'in-forward-motion ';
     else if (positionInit === 'Q6')
-      positionState = 'in-reverse-motion position';
+      positionState = 'in-reverse-motion ';
     else if (positionInit === 'Q7')
-      positionState = 'cruise-control position';
+      positionState = 'cruise-control ';
     else
       positionState = '';
     return positionState;
@@ -33,7 +33,7 @@ const StatePosition = () => {
 
   function processedSignal() {
     if (inputInit === 'a')
-      signalProcessed = 'engine-started/engine-off';
+      signalProcessed = 'engine-started';
     else if (inputInit === 'b')
       signalProcessed = 'brake-held';
     else if (inputInit === 'c')
@@ -54,17 +54,17 @@ const StatePosition = () => {
   }
 
   return (
-    <div >
-      <p className='state-position'>
-        state: {statePosition()}
-      </p>
-      <p className='character-accepted'>
-        symbol processed: {inputInit}
-      </p>
-      <p className='signal'>
-        signal: {processedSignal()}
-      </p>
+   <div className="row w-100">
+    <div className="col-12">
+    <ul class="list-group ">
+      <li class="list-group-item"><b>State: </b>{statePosition()}</li>
+      <li class="list-group-item"><b>Symbol Processed: </b>{inputInit}</li>
+      <li class="list-group-item"><b>Signal: </b>{processedSignal()}</li>
+    </ul>
     </div>
+   </div>
+   
+   
   )
 }
 

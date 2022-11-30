@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './RunStringHeader.css';
+// import './RunStringHeader.css';
 import {VscDebugRestart} from 'react-icons/vsc';
 import { useDispatch} from 'react-redux';
 import {start} from "../../../dfa-operation/dfaModel"
@@ -43,18 +43,19 @@ const RunStringHeader = (props) => {
       }
   
     return (
-            <div className="run-string" onSubmit={runStringButton}>
-                <form className='run-string-form'>
-                    <div className='form-control'>
-                        <input type='text' value={state}  placeholder='Enter a character to run' onChange={handleChange}/>
-                        <button className='btn' type='submit'>run</button>
-                        <button className='restart-btn'onClick={refreshPage} >
-                            <VscDebugRestart/>
-                        </button>
+            <form className='row w-100 input-group input-group-sm ' onSubmit={runStringButton}>
+                    <div className="col-6 d-flex align-items-center">
+                        <input className='form-control w-100' type='text' value={state}  placeholder='Enter char' onChange={handleChange}/>
                     </div>
-                </form>
-                
-            </div>
+                    <div className="col-3 d-flex align-items-center ">
+                        <button className='btn btn-sm btn-success w-100' type='submit'>run</button>
+                    </div>
+                    <div className="col-3 d-flex align-items-center  ">
+                    <button className='btn btn-sm btn-danger w-100'onClick={refreshPage} >
+                        <VscDebugRestart/>
+                    </button>
+                    </div>
+            </form>
     )
 }
 

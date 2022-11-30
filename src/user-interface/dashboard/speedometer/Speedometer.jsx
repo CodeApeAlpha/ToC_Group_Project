@@ -119,7 +119,7 @@ const Speedometer = () => {
                         digit3 === 8 || digit3 === 9 ? "segment g" : "segment "} x="30" y="220"></use>
                 </svg>
                 <div>
-                    <p className="kmh">kmH</p>
+                    <p className='text-danger'>kmH</p>
                 </div>
             </div>
         </div>

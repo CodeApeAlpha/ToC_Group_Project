@@ -1,13 +1,23 @@
 #simulationContainer {
     /*Kemani Screen Ratio*/
-    /* min-width: 1098px; */
+    min-width: 1098px;
     /*Alex Screen Ratio*/
     /* min-width: 1010px; */
     /*Joel Screen Ratio*/
-    min-width: 1024px;
+    /* min-width: 1024px; */
     height: 100vh;
 }
 
+/* #background {
+    position: relative;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+} */
 #background {
     position: relative;
     background-position: center;
@@ -17,8 +27,7 @@
     height: 100%;
     width: 100%;
     z-index: 1;
-}
-
+} 
 #foreground {
     position: absolute;
     bottom: 0;
@@ -30,6 +39,18 @@
     width: 1000%;
     z-index: 2;
 }
+/* #foreground {
+    position: absolute;
+    bottom: 0;
+    background-position: bottom;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-repeat: repeat-x;
+    height: 100%;
+    width: 1000%;
+    z-index: 2;
+} */
+
 
 #car {
     position: absolute;
@@ -37,17 +58,20 @@
     overflow-x: hidden;
     overflow-y: hidden;
     /*Joel Screen Ratio*/
-    bottom: 3%; /*car height rom road*/
-    height: 21%; /*car lenght*/
-    width: 25%; /*car height*/
+    /* bottom: 3%; car height rom road */
+    /* height: 21%; car lenght*/
+    /* width: 25%; car height*/
     /*Alex Screen Ratio*/
     /*bottom: 5%;*/ /*car height rom road*/
     /*height: 21%;*/ /*car lenght*/
     /*width: 29%;*/ /*car height*/
     /*Kemani Screen Ratio*/
-    /*bottom: 2%;*/ /*car height rom road*/
-    /*height: 18%;*/ /*car lenght*/
-    /*width: 25%;*/ /*car height*/
+    bottom: 2%; 
+    /*car height rom road*/
+    height: 18%; 
+    /*car lenght*/
+    width: 25%; 
+    /*car height */
     margin-left: 15%;
     z-index: 3;
     animation: bodyRoll 1s linear infinite;

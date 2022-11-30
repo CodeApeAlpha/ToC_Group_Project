@@ -139,14 +139,6 @@ export default function CarSimulation () {
 
     //-------------------------------------------------------HELPER FUNCTIONS------------------------------
 
-
-    //Parameters -> Is car on?("1 or 0"), drive position("f,r,c"), speed(int)
-    // function updateData(on, speedInput, positionInput) {
-    //     setCarOn(on);
-    //     setDrivePosition(positionInput);
-    //     setSpeed(speedInput);
-    // }
-
     function isCarMoving() { //range 50 - 1 ms
         if (speedInit === 0){
             return "paused";
@@ -175,14 +167,8 @@ export default function CarSimulation () {
 
     return (
        
-            // <div id = {CarSimulationStyles.simulationContainer} style = {{transform: `scale(${scale})`}} onClick ={(e) => { test() }}>
-            // <div id = {CarSimulationStyles.background} ref = {backgroundElement} style = {backgroundStyle}>
-            //     <div id = {CarSimulationStyles.foreground} ref = {foregroundElement} style = {foregroundStyle}></div>
-            //     <div id = {CarSimulationStyles.car} ref = {carElement} style = {carStyle}></div> 
-            // </div>
-
-            // </div>
-            <div id = {CarSimulationStyles.simulationContainer}  >
+           
+            <div  id = {CarSimulationStyles.simulationContainer}  >
                 <div id = {CarSimulationStyles.background} ref = {backgroundElement} style = {backgroundStyle}>
                     <div id = {CarSimulationStyles.foreground} ref = {foregroundElement} style = {foregroundStyle}></div>
                     <div id = {CarSimulationStyles.car} ref = {carElement} style = {carStyle}></div> 
@@ -193,15 +179,4 @@ export default function CarSimulation () {
     );
 
 };
-// const mapStateToProps = (state, ownProps) => {
-//     return {
-//       contacts: state.contacts
-//     }
-//   };
-  
-//   const mapDispatchToProps = (dispatch) => {
-//     return {
-//       createContact: contact => dispatch(contactAction.createContact(contact))
-//     }
-//   };
 

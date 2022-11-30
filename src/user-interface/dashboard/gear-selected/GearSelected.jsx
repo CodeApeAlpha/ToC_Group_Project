@@ -1,5 +1,5 @@
 import React from 'react'
-import './GearSelected.css'
+// import './GearSelected.css'
 import { useSelector } from 'react-redux';
 
 const GearSelected = () => {
@@ -33,8 +33,10 @@ const GearSelected = () => {
   let gear = gearSelection();
 
   return (
-    <div className={gear === 'P' ? 'gear' : 'gear-start'}>
+    <div className={gear === 'P' ? 'row w-100 text-danger' : 'row w-100 text-success  gear-start'}>
+      <div className="col-12 d-flex justify-content-center">
         <h1>{gearSelection()}</h1>
+      </div>
     </div>
   )
 }
